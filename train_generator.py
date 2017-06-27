@@ -80,7 +80,7 @@ def main():
 			print("********************************************************")
 
 			writer.add_summary(summary, step)
-			writer.add_run_metadata(run_metadata, 'step_{:04d}'.format(step))
+			writer.add_run_metadata(run_metadata, 'epoch_{:04d}, step_{:04d}'.format(epoch, step))
 
 			step += 1
 			
